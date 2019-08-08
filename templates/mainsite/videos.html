@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Gallery{% endblock %}
+{% block content %}
+    <br>
+<div id="stories" class="container-fluid  animated fadeInUp">
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+         <div class="embed-responsive embed-responsive-16by9">
+             <video width="320" height="240" controls>
+            <source src="{% static 'videos/bayes.mp4' %}" type="video/mp4">
+
+           Your browser does not support the video tag.
+        </video>
+</div>
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+         <div class="embed-responsive embed-responsive-16by9">
+             <video width="320" height="240" controls>
+            <source src="{% static 'videos/bayes.mp4' %}" type="video/mp4">
+
+           Your browser does not support the video tag.
+        </video>
+</div>
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+           <div class="embed-responsive embed-responsive-16by9">
+               <h4>Video 1</h4>
+             <video width="320" height="240" controls>
+            <source src="{% static 'videos/bayes.mp4' %}" type="video/mp4">
+        </video>
+</div>
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+         <h4>Video2</h4>
+          <div class="embed-responsive embed-responsive-16by9">
+
+             <video width="320" height="240" controls>
+            <source src="{% static 'videos/bayes.mp4' %}" type="video/mp4">
+
+           Your browser does not support the video tag.
+        </video>
+</div>
+    </div>
+
+</div>
+<br>
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+
+</div>
+<br>
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+   >
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+
+    </div>
+
+</div>
+</div>
+    <div class="container-fluid">
+        <a href="#" id="nxt-btn" class="btn  btn-get-in-touch">Read more</a>
+    </div>
+{% endblock %}

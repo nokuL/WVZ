@@ -1,0 +1,78 @@
+
+{% load static %}
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+     <title>{% block title %}Women's voice zimbabwe{% endblock %}</title>
+    <link rel="icon" href="{% static 'img/WOMENSVOICE ZIMBABWE LOGO - PNG-01.png' %}">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static 'js/site.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/site.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kurale|Raleway:300i,400&display=swap" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body data-spy="scroll " data-offset="60" data-target="#myNavbar">
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top custom-nav" id="#myNavbar">
+    <a href="{% url 'home' %}" class="navbar-brand">
+        <img src="{% static 'img/WOMENSVOICE ZIMBABWE LOGO - PNG-01.png' %}" height="50" width="100" alt="CoolBrand">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+            <a href="{% url 'gallery' %}" class="nav-item nav-link">Gallery</a>
+            {% comment %} <a href="{% url 'services' %}" class="nav-item nav-link">Services</a>{% endcomment %}
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: maroon!important;" href="{% url 'news' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          News
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'news' %}" style="color:maroon !important; font-size: 15px; font-weight: bold">Stories</a>
+          <a class="dropdown-item" href="https://www.youtube.com/channel/UCjQmuXhKZqyCNFNg6u6tqKg" style="color: maroon !important; font-size: 15px; font-weight: bold">Videos</a>
+        </div>
+      </li>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <ul class="nav navbar-nav ml-auto">
+                    <a href="https://www.facebook.com/womensvoicezimbabwe/" class="nav-link"><i class="fa fa-facebook-square fa-lg"style="font-size:20px;color: #4267B2;"></i></a>
+                    <a href="#" class="nav-link"><i class="fa fa-instagram fa-lg"style="font-size:20px;color:#405DE6 ;"></i></a>
+                <li>
+                    <a href="https://twitter.com/womensvoicezw?s=08" class="nav-link"><i class="fa fa-twitter fa-lg" style="font-size:20px;color:#38A1F3;"></i></a>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCjQmuXhKZqyCNFNg6u6tqKg" class="nav-link"><i class="fa fa-youtube fa-lg" style="font-size:20px;color:#FF0000;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+
+</body>
+<!-- Footer -->
+{% comment %}<footer class="" style="background-color: lightgrey">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: maroon; font-weight: bold; ">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/" style="color: maroon"> Noxie.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->{% endcomment %}
+</html>

@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="200" >
+            <img src="{% static 'img/1.jpg' %}" alt="First Slide" height="100%" width="100%" class="img-fluid">
+            <div class="carousel-caption d-none d-md-block ">
+                <p class="animated slideInRight first" style="font-size: 40px;">Women's Voice Zimbabwe</p>
+              <p class="animated slideInLeft second" style="font-size: 20px; ">Amplifying the voice of women </p>
+      </div>
+
+        </div>
+        <div class="carousel-item" data-interval="200">
+         <img src="{% static 'img/2.jpg' %}" alt="First Slide" height="100%" width="100%">
+            <div class="carousel-caption d-none d-md-block">
+                <p  class="animated slideInLeft first " style="font-size: 40px; ">Women's Voice Zimbabwe</p>
+        <p class="animated slideInRight second" style="font-size: 20px; ">Telling the women's story</p>
+      </div>
+
+        </div>
+        <div class="carousel-item" data-interval="200">
+            <img src="{% static 'img/3.jpg' %}" alt="First Slide" height="100%" width="100%">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="animated slideInLeft first" style="font-size: 40px; ">Women's Voice Zimbabwe</p>
+        <p class="animated slideInRight second" style="font-size: 20px; ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      </div>
+        </div>
+    </div>
+    </div>
+    <br>
+ <div class="container-fluid animated slideInUp section-div" id="aboutus">
+  <h2 id="wvz">About us</h2>
+
+     <br>
+  <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
+         <img class="animated bounceIn" src="{% static 'img/women11.jpg' %}" alt="First Slide">
+
+      </div>
+       <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3 ">
+         <p class="paragraph" > Women’s voice Zimbabwe is a registered media organization that seeks to amplify the voice for the women and girls in Zimbabwe. The organisation was established in 2017 after realising that most women are consumers of content and not creators of content, hence most issues affecting women where not being reported or being under reported in the media. Our goal is to inform, empower and advocate for women and girls.  We believe in celebrating women and girls successes, defending their rights, highlighting their plight, mentoring, sharing their experiences and ambitions. </p>
+
+           <button class="btn btn-default btn-lg btn-get-in-touch">Read more</button>
+       </div>
+  </div>
+</div>
+<div id="myCarousel" class="carousel slide  carousel-fade" data-ride="carousel">
+    <!-- Carousel indicators -->
+
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="100" >
+            <img src="{% static 'img/1.jpg' %}" alt="First Slide" height="100%" width="100%">
+            <div class="carousel-caption d-none d-md-block ">
+                <p class=" second" >Women's Voice Zimbabwe</p>
+              <p class=" second">Amplifying the voice of women </p>
+      </div>
+
+        </div>
+        <div class="carousel-item" data-interval="100">
+         <img src="{% static 'img/2.jpg' %}" alt="First Slide" height="100%" width="100%" >
+            <div class="carousel-caption d-none d-md-block">
+                <p  class="animated  ">Women's Voice Zimbabwe</p>
+        <p class="second">Telling the women's story</p>
+      </div>
+
+        </div>
+        <div class="carousel-item" data-interval="100">
+            <img src="{% static 'img/3.jpg' %}" alt="First Slide" height="100%" width="100%">
+            <div class="carousel-caption d-none d-md-block">
+                <p class=" second">Women's Voice Zimbabwe</p>
+        <p class=" second">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid animated slideInUp section-div" id="aboutus">
+  <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3 ">
+          <h2 id="wvz">Our values</h2>
+         <p class="paragraph" style="color: maroon; font-size:20px" > Client Value Creation</p>
+           <p class="paragraph" style="color: maroon; font-size:20px" > Stewardship </p>
+           <p class="paragraph" style="color: maroon; font-size:20px"> Teamwork </p>
+           <p class="paragraph"style="color: maroon; font-size:20px" > Quality </p>
+
+       </div>
+      <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
+         <img class="animated bounceIn" src="{% static 'img/women11.jpg' %}" alt="First Slide">
+          <br>
+          <br>
+        <a href="{% url 'team' %}" class="btn  btn-get-in-touch">Read more</a>
+
+      </div>
+
+  </div>
+</div>
+
+</div>
+{% endblock %}
