@@ -2,103 +2,68 @@
 {% load static %}
 {% block title %}Gallery{% endblock %}
 {% block content %}
-    <br>
-<div class="container-fluid text-center">
- <div class="row">
-     <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
-      <img src="{{ article.article_cover.url }}" height="300px" width="90%" alt="CoolBrand">
+   <div class="content clear-fix">
+    <div class="main-content">
+     <h1 class="recent-post-title">Recent posts</h1>
+        <div class="post">
+             <img src="{{ article.article_cover.url }}" height="300px" width="90%" alt="CoolBrand">
+            <div class="post-preview">
+            <br>
+                <h1 style="color: black">{{ article.article_title }}</h1>
+                <i class="fa fa-user" style="color: black">{{ article.author_first_name }}</i>&nbsp;
+                <i class="fa calendar" style="color: black">Mar 11 , 2019</i>
+                <br>
+                 {% if article.article_paragraph1  is not ''%}
+                      <p class="article-paragraph">{{ article.article_paragraph1 }}</p>
+                {% endif %}
+            <br>
+               {% if article.article_paragraph2 is not '' %}
+                   <p class="article-paragraph">{{ article.article_paragraph2 }}</p>
+               {% endif %}
+            <br>
+               {% if article.article_paragraph3 %}
+                   <p class="article-paragraph">{{ article.article_paragraph4 }}</p>
+               {% endif %}
+            <br>
+               {% if article.article_paragraph5 is not '' %}
+                   <p class="article-paragraph">{{ article.article_paragraph6 }}</p>
+               {% endif %}
+            <br>
+               {% if article.article_paragraph7 is not '' %}
+                   <p class="article-paragraph">{{ article.article_paragraph7}}</p>
+               {% endif %}
 
-        <br>
-        <br>
-      <h3>{{ article.article_title }}</h3>
-         <hr>
-      <p class="paragraph">{{ article.article_paragraph1 }}</p>
-      <hr>
-         {% if article.article_paragraph2 is not '' %}
-              <p class="paragraph">{{ article.article_paragraph2 }}</p>
-             <br>
-         {% endif %}
-         {% if article.article_paragraph3 is not '' %}
-              <p class="paragraph">{{ article.article_paragraph3 }}</p>
-             <br>
-         {% endif %}
-        {% if article.article_paragraph4 is not '' %}
-              <p class="paragraph">{{ article.article_paragraph4 }}</p>
-             <br>
-         {% endif %}
-         {% if article.article_paragraph5 is not '' %}
-              <p class="paragraph">{{ article.article_paragraph5 }}</p>
-             <br>
-         {% endif %}
-         {% if article.article_paragraph6 is not '' %}
-              <p class="paragraph">{{ article.article_paragraph6 }}</p>
-             <br>
-         {% endif %}
-      {% if article.article_paragraph7 is not '' %}
-              <p class="paragraph">{{ article.article_paragraph7 }}</p>
-          <br>
-         {% endif %}
 
-</div>
+                  <a href="#" class="btn btn-default btn-lg btn-get-in-touch" style="text-align: center" >Read more</a>
 
-  <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2" style="text-align: right; ">
-      <h3>Top stories</h3>
-      <hr>
-   <ul class="list-group list-group-flush">
-  <li class="list-group-item paragraph">Red </li>
-  <li class="list-group-item paragraph">Yellow</li>
-  <li class="list-group-item paragraph">Blue</li>
-  <li class="list-group-item paragraph">Orange</li>
-  <li class="list-group-item paragraph">Pink</li>
-</ul>
-      <br>
-      <h3>Most read</h3>
-      <hr>
-
-   <ul class="list-group list-group-flush">
-  <li class="list-group-item paragraph">Red </li>
-  <li class="list-group-item paragraph">Yellow</li>
-  <li class="list-group-item paragraph">Blue</li>
-  <li class="list-group-item paragraph">Orange</li>
-  <li class="list-group-item paragraph">Pink</li>
-</ul>
-       <ul class="list-group list-group-flush">
-  <li class="list-group-item paragraph">Cras justo odio</li>
-  <li class="list-group-item paragraph">Dapibus ac facilisis in</li>
-  <li class="list-group-item paragraph">Morbi leo risus</li>
-  <li class="list-group-item paragraph">Porta ac consectetur ac</li>
-  <li class="list-group-item paragraph">Vestibulum at eros</li>
-</ul>
-
-  </div>
-
-</div>
-{% comment %}  <div class="row content">
-    <div class="col-sm-1">
-
+            </div>
+        </div>
     </div>
-    <div class="col-sm-7 text-left">
-     <img src="{% static 'gallery/women4.jpeg' %}" height="300px" width="100%" alt="CoolBrand">
-        <br>
-        <br>
-      <h3>Welcome</h3>
-         <hr>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-      <h3>Test</h3>
-      <p class="paragraph">Lorem ipsum...</p>
+    <div class="sidebar">
+        <div  class="section search">
+            <h2 class="section-title"> Search</h2>
+            <form action="#" method="post">
+                <input type="text" name="search-term" class="text-input" placeholder="Search.....">
+            </form>
+        </div>
+        <div class="section topics">
+            <h3>Topics</h3>
+            <ul>
+                <li> <a href="#">Poems</a></li>
+                <li> <a href="#">Motivation</a></li>
+                <li> <a href="#">Inspiration</a></li>
+                <li> <a href="#">Life lessons</a></li>
+                <li> <a href="#">Fiction</a></li>
+
+
+
+
+            </ul>
+        </div>
     </div>
-    <div class="col-lg-2 col-sm-offset-1 col-sm-offset-2 ">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
     </div>
-       <div class="col-sm-2 col-md-2">.col-sm-5 .col-md-6</div>
-  </div>{% endcomment %}
-</div>
+
+
 
 
 {% endblock %}

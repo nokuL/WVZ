@@ -2,40 +2,39 @@
 {% load static %}
 {% block title %} Home {% endblock %}
 {% block content %}
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide " data-ride="carousel" style="height: 100%; ">
     <!-- Carousel indicators -->
 
     <!-- Wrapper for carousel items -->
     <div class="carousel-inner">
         <div class="carousel-item active" data-interval="200" >
-            <img src="{% static 'img/1.jpg' %}" alt="First Slide" height="100%" width="100%" class="img-fluid">
-            <div class="carousel-caption d-none d-md-block ">
-                <p class="animated slideInRight first" style="font-size: 40px;">Women's Voice Zimbabwe</p>
-              <p class="animated slideInLeft second" style="font-size: 20px; ">Amplifying the voice of women </p>
-      </div>
-
-        </div>
-        <div class="carousel-item" data-interval="200">
-         <img src="{% static 'img/2.jpg' %}" alt="First Slide" height="100%" width="100%">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="{% static 'img/image11.jpg' %}" alt="First Slide" height="100%" width="100%" >
+             <div class="carousel-caption d-none d-md-block">
                 <p  class="animated slideInLeft first " style="font-size: 40px; ">Women's Voice Zimbabwe</p>
         <p class="animated slideInRight second" style="font-size: 20px; ">Telling the women's story</p>
       </div>
+        </div>
+       {% comment %} <div class="carousel-item" data-interval="200">
+         <img src="{% static 'img/image22.jpg' %}" alt="First Slide" height="100%" width="100%">
+            <div class="carousel-caption d-none d-md-block">
+                <p  class="animated slideInLeft first " style="font-size: 40px; ">Women's Voice Zimbabwe</p>
+        <p class="animated slideInRight second" style="font-size: 20px; ">Amplifying the voice of women</p>
+      </div>
 
         </div>
         <div class="carousel-item" data-interval="200">
-            <img src="{% static 'img/3.jpg' %}" alt="First Slide" height="100%" width="100%">
+            <img src="{% static 'img/image33.jpg' %}" alt="First Slide" height="100%" width="100%">
             <div class="carousel-caption d-none d-md-block">
                 <p class="animated slideInLeft first" style="font-size: 40px; ">Women's Voice Zimbabwe</p>
-        <p class="animated slideInRight second" style="font-size: 20px; ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-      </div>
+        <p class="animated slideInRight second" style="font-size: 20px; ">Empowering women</p>
+      </div>{% endcomment %}
         </div>
     </div>
     </div>
-    <br>
- <div class="container-fluid animated slideInUp section-div" id="aboutus">
-  <h2 id="wvz">About us</h2>
 
+ <div class="container-fluid section-div" style="height:70vh" id="aboutus">
+  <h2 id="wvz">About us</h2>
+ <hr>
      <br>
   <div class="row">
       <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
@@ -49,56 +48,111 @@
        </div>
   </div>
 </div>
-<div id="myCarousel" class="carousel slide  carousel-fade" data-ride="carousel">
-    <!-- Carousel indicators -->
+    <div class="container-fluid services " style="height: 90vh">
 
-    <!-- Wrapper for carousel items -->
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="100" >
-            <img src="{% static 'img/1.jpg' %}" alt="First Slide" height="100%" width="100%">
-            <div class="carousel-caption d-none d-md-block ">
-                <p class=" second" >Women's Voice Zimbabwe</p>
-              <p class=" second">Amplifying the voice of women </p>
-      </div>
+            <h1 class="second" style="font-weight: 700; color: white"> Our Services</h1>
+              <hr>
+        <div class="row">
+            <div class="col-md-3 col-md-3 ">
+                <div class="icon">
+                    <i class="fa fa-camera-retro" ></i>
+                </div>
+                <h3 style="color: maroon">Media Consultancy</h3>
+                <p>nown, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+              <div class="col-md-3  col-md-3 col-md-offset-1 ">
+                <div class="icon">
+                     <i class="fa fa-film"></i>
+                </div>
+                <h3 style="color: maroon">Documentaries</h3>
+                <p>nown, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+              <div class="col-md-3 col-md-offset-1 " style="text-align: center">
+                <div class="icon">
+                    <i class="fa fa-book"></i>
+                </div>
+                <h3 style="color: maroon">Story telling</h3>
+                <p>nown, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+        </div>
 
-        </div>
-        <div class="carousel-item" data-interval="100">
-         <img src="{% static 'img/2.jpg' %}" alt="First Slide" height="100%" width="100%" >
-            <div class="carousel-caption d-none d-md-block">
-                <p  class="animated  ">Women's Voice Zimbabwe</p>
-        <p class="second">Telling the women's story</p>
-      </div>
-
-        </div>
-        <div class="carousel-item" data-interval="100">
-            <img src="{% static 'img/3.jpg' %}" alt="First Slide" height="100%" width="100%">
-            <div class="carousel-caption d-none d-md-block">
-                <p class=" second">Women's Voice Zimbabwe</p>
-        <p class=" second">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-      </div>
-        </div>
     </div>
-    </div>
-    <div class="container-fluid animated slideInUp section-div" id="aboutus">
-  <div class="row">
-      <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3 ">
-          <h2 id="wvz">Our values</h2>
-         <p class="paragraph" style="color: maroon; font-size:20px" > Client Value Creation</p>
-           <p class="paragraph" style="color: maroon; font-size:20px" > Stewardship </p>
-           <p class="paragraph" style="color: maroon; font-size:20px"> Teamwork </p>
-           <p class="paragraph"style="color: maroon; font-size:20px" > Quality </p>
+     <div class="container-fluid team " style="height: 80vh">
 
+            <h1 class="second" style="font-weight: 700"> Meet our team</h1>
+              <hr>
+         <br>
+       <div class="row">
+           <div class="col-md-1"></div>
+              <div class="col-md-3  col-md-3 col-md-offset-1 ">
+                  <div class="imgBox">
+                   <img src="{% static 'img/women11.jpg' %}">
+                </div>
+                <div class="memberdetails">
+                    <h3>TATENDA BROWN<br><span>CEO and Founder</span></h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/womensvoicezimbabwe/" class="nav-link"><i class="fa fa-facebook-square"style="font-size:20px;color: #4267B2;"></i></a></li>
+                        <li><a href="https://www.instagram.com/womensvoicezw/" class="nav-link"><i class="fa fa-linkedin-square"style="font-size:20px;color:#405DE6 ;"></i></a></li>
+                        <li><a href="https://twitter.com/womensvoicezw?s=08" class="nav-link"><i class="fa fa-twitter " style="font-size:20px;color:#38A1F3;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <div class="col-md-3 col-md-offset-1 " style="text-align: center">
+                <div class="imgBox">
+                   <img src="{% static 'img/women6.jpeg' %}">
+                </div>
+                <div class="memberdetails">
+                    <h3>RUVIMBO MOYO<br><span>CEO and Founder</span></h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/womensvoicezimbabwe/" class="nav-link"><i class="fa fa-facebook-square"style="font-size:20px;color: #4267B2;"></i></a></li>
+                        <li><a href="https://www.instagram.com/womensvoicezw/" class="nav-link"><i class="fa fa-linkedin-square"style="font-size:20px;color:#405DE6 ;"></i></a></li>
+                        <li><a href="https://twitter.com/womensvoicezw?s=08" class="nav-link"><i class="fa fa-twitter " style="font-size:20px;color:#38A1F3;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <br>
+       <div class="row">
+            <div class="col-md-3 ">
+                <div class="imgBox">
+                   <img src="{% static 'gallery/woman7.jpeg' %}">
+                </div>
+                <div class="memberdetails">
+                    <h3>NOKUTHABA LUNGA<br><span>CEO and Founder</span></h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/womensvoicezimbabwe/" class="nav-link"><i class="fa fa-facebook-square"style="font-size:20px;color: #4267B2;"></i></a></li>
+                        <li><a href="https://www.instagram.com/womensvoicezw/" class="nav-link"><i class="fa fa-linkedin-square"style="font-size:20px;color:#405DE6 ;"></i></a></li>
+                        <li><a href="https://twitter.com/womensvoicezw?s=08" class="nav-link"><i class="fa fa-twitter " style="font-size:20px;color:#38A1F3;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <div class="col-md-3  col-md-3 col-md-offset-1 ">
+                 <div class="imgBox">
+                   <img src="{% static 'gallery/women13.jpeg' %}">
+                </div>
+                <div class="memberdetails">
+                    <h3>TINASHE GUMBO<br><span>CEO and Founder</span></h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/womensvoicezimbabwe/" class="nav-link"><i class="fa fa-facebook-square"style="font-size:20px;color: #4267B2;"></i></a></li>
+                        <li><a href="https://www.instagram.com/womensvoicezw/" class="nav-link"><i class="fa fa-linkedin-square"style="font-size:20px;color:#405DE6 ;"></i></a></li>
+                        <li><a href="https://twitter.com/womensvoicezw?s=08" class="nav-link"><i class="fa fa-twitter " style="font-size:20px;color:#38A1F3;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+              <div class="col-md-3 col-md-offset-1 " style="text-align: center">
+                <div class="imgBox">
+                   <img src="{% static 'gallery/women12.jpg' %}">
+                </div>
+                <div class="memberdetails">
+                    <h3>MIRANDA JOHNS<br><span>CEO and Founder</span></h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/womensvoicezimbabwe/" class="nav-link"><i class="fa fa-facebook-square"style="font-size:20px;color: #4267B2;"></i></a></li>
+                        <li><a href="https://www.instagram.com/womensvoicezw/" class="nav-link"><i class="fa fa-linkedin-square"style="font-size:20px;color:#405DE6 ;"></i></a></li>
+                        <li><a href="https://twitter.com/womensvoicezw?s=08" class="nav-link"><i class="fa fa-twitter " style="font-size:20px;color:#38A1F3;"></i></a></li>
+                    </ul>
+                </div>
+        </div>
        </div>
-      <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
-         <img class="animated bounceIn" src="{% static 'img/women11.jpg' %}" alt="First Slide">
-          <br>
-          <br>
-        <a href="{% url 'team' %}" class="btn  btn-get-in-touch">Read more</a>
-
-      </div>
-
-  </div>
-</div>
-
-</div>
+     </div>
+    <div></div>
 {% endblock %}

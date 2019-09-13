@@ -10,6 +10,7 @@ urlpatterns = [
     path('team', mainsite.MeetTheTeamView.as_view(), name='team'),
     path('article/<int:pk>', mainsite.ArticleTemplate.as_view(), name='article'),
     path('videos', mainsite.Videos.as_view(), name='videos'),
+    path('newsbycategory/<int:pk>', mainsite.NewsByCategory.as_view(), name='newsbycategory')
 
 
 ]
