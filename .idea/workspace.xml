@@ -2,47 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4f22b99-557d-4e61-b4c8-612519bc9d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/image1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/image11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/image2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/image22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/image3.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/image33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/paginate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/jquery.twbsPagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainsite/newsbycategory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WVZ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WVZ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/ashley.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/munda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/nicole.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/rose.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0002_auto_20190726_1325.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0003_article_article_cover.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0004_photo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0005_article_article_number.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0006_article_article_summary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0007_auto_20190731_1332.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/migrations/0008_remove_article_article_summary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainsite/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainsite/views/mainsite.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/views/mainsite.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/site.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainsite/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainsite/newsbycategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/newsbycategory.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +65,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/StudentPerformanceAnalysis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -104,18 +78,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="C:\Users\DELL\PycharmProjects\WVZ\templates\registration" />
+      <recent name="C:\Users\DELL\PycharmProjects\WVZ\static\videos" />
+      <recent name="C:\Users\DELL\PycharmProjects\WVZ\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="C:\Users\DELL\PycharmProjects\WVZ\static\js" />
       <recent name="C:\Users\DELL\PycharmProjects\WVZ\static\css" />
       <recent name="C:\Users\DELL\PycharmProjects\WVZ\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/css" />
-      <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="C:\Users\DELL\PycharmProjects\WVZ\templates\registration" />
-      <recent name="C:\Users\DELL\PycharmProjects\WVZ\static\videos" />
-      <recent name="C:\Users\DELL\PycharmProjects\WVZ\static\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -193,6 +167,11 @@
       <workItem from="1568204537505" duration="3436000" />
       <workItem from="1568288193299" duration="4593000" />
       <workItem from="1568303635624" duration="1446000" />
+      <workItem from="1568371588535" duration="881000" />
+      <workItem from="1568374094011" duration="2797000" />
+      <workItem from="1568379351677" duration="656000" />
+      <workItem from="1568975469233" duration="1751000" />
+      <workItem from="1568979756791" duration="1780000" />
     </task>
     <servers />
   </component>

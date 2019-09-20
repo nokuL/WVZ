@@ -63,8 +63,10 @@ class ArticleTemplate(DetailView):
         article_pk = self.kwargs['pk']
         print(">>>>>>>>>>>> article pk" + str(article_pk))
         article = Article.objects.get(pk=article_pk)
+        categories = Category.objects.all()
+
         super(ArticleTemplate, self).get_context_data(**kwargs)
-        context = {'article': article}
+        context = {'article': article, 'categories': categories}
         return context
 
 

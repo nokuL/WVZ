@@ -4,7 +4,8 @@
 {% block content %}
    <div class="content clear-fix">
     <div class="main-content">
-     <h1 class="recent-post-title">Recent posts</h1>
+    <br>
+    <br>
         <div class="post">
              <img src="{{ article.article_cover.url }}" height="300px" width="90%" alt="CoolBrand">
             <div class="post-preview">
@@ -33,29 +34,19 @@
                    <p class="article-paragraph">{{ article.article_paragraph7}}</p>
                {% endif %}
 
-
-                  <a href="#" class="btn btn-default btn-lg btn-get-in-touch" style="text-align: center" >Read more</a>
-
             </div>
         </div>
     </div>
     <div class="sidebar">
-        <div  class="section search">
-            <h2 class="section-title"> Search</h2>
-            <form action="#" method="post">
-                <input type="text" name="search-term" class="text-input" placeholder="Search.....">
-            </form>
-        </div>
+        <br>
+        <br>
         <div class="section topics">
-            <h3>Topics</h3>
+            <h3>Categories</h3>
             <ul>
-                <li> <a href="#">Poems</a></li>
-                <li> <a href="#">Motivation</a></li>
-                <li> <a href="#">Inspiration</a></li>
-                <li> <a href="#">Life lessons</a></li>
-                <li> <a href="#">Fiction</a></li>
-
-
+                {% for category in categories %}
+                    <li> <a href="{% url 'newsbycategory' pk=category.pk %}">{{ category.category_name }}</a></li>
+                {% endfor %}
+                <li> <a href="{% url 'news'  %}">All news</a></li>
 
 
             </ul>

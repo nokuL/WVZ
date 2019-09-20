@@ -174,15 +174,7 @@ transform-style: preserve-3d;
 .col-spaced {
      margin-left: 20px
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: maroon;
-  color: white;
-  text-align: center;
-}
+
 .team{
     padding: 50px 0;
     height:100% ;

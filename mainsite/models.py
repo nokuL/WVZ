@@ -13,6 +13,8 @@ class Article(models.Model):
     article_category = models.ForeignKey(
         'Category', on_delete=models.CASCADE, default='', null=True)
     article_cover = models.ImageField(upload_to='images/', default='')
+    article_video_link = models.CharField(max_length=2000, default='')
+    video = models.BooleanField(default=False, blank=False)
     publish_date = models.DateTimeField('date created', default=timezone.now)
     article_summary = models.CharField(max_length=2000, blank=False)
     article_paragraph1 = models.TextField(default='', blank=True)

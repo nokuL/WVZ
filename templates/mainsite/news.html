@@ -36,7 +36,7 @@
                   <h4 class="card-title">{{ article.article_title }}</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
-                 <button class="btn btn-default btn-lg btn-get-in-touch">Read more</button>
+                    <a href="{% url 'article' pk=article.pk %}" class="btn btn-default btn-lg btn-get-in-touch">Read more</a>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
                   <h4 class="card-title">{{ article.article_title }}</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
-                 <button class="btn btn-default btn-lg btn-get-in-touch">Read more</button>
+                    <a href="{% url 'article' pk=article.pk %}" class="btn btn-default btn-lg btn-get-in-touch">Read more</a>
                 </div>
               </div>
             </div>
@@ -136,38 +136,12 @@
                   <h4 class="card-title">{{ article.article_title }}</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
-                 <button class="btn btn-default btn-lg btn-get-in-touch">Read more</button>
+                    <a href="{% url 'article' pk=article.pk %}" class="btn btn-default btn-lg btn-get-in-touch">Read more</a>
                 </div>
               </div>
             </div>
               {% endfor %}
 
-
-          {% comment %}  <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                 <button class="btn btn-default btn-lg btn-get-in-touch">Read more</button>
-                </div>
-              </div>
-            </div{% endcomment %}>
-
-           {% comment %} <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                 <button class="btn btn-default btn-lg btn-get-in-touch">Read more</button>
-                </div>
-              </div>
-            </div>{% endcomment %}
           </div>
 
         </div>
@@ -187,15 +161,25 @@
                 {% for article in articles %}
                     <li class="list-group-item post">
                     <div class="post">
-             <img src="{{ article.article_cover.url }}" alt="CoolBrand" style="width: 40%;
-    height: 200px;" class="post-image">
+                        {% if article.article_video_link is not '' %}
+                              <a href="{{ article.article_video_link }}"><img src="{{ article.article_cover.url }}" alt="CoolBrand" style="width: 40%;
+    height: 200px;" class="post-image"></a>
+                        {% else %}
+                               <a href="#"><img src="{{ article.article_cover.url }}" alt="CoolBrand" style="width: 40%;
+    height: 200px;" class="post-image"></a>
+                        {% endif %}
             <div class="post-preview" >
             <h3>{{ article.article_title }}</h3>
                <i class="fa fa-user" style="color: black">{{ article.author_first_name }}</i>&nbsp;
                 <i class="fa calendar" style="color: black">Mar 11 , 2019</i>
                 <p class="preview-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it</p>
+                  {% if article.video  %}
+                       <a href="{{ article.article_video_link }}" class="btn btn-default btn-lg btn-get-in-touch">Watch video</a>
 
-                  <a href="#" class="btn btn-default btn-lg btn-get-in-touch" style="text-align: center" >Read more</a>
+                  {% else %}
+                      <a href="{% url 'article' pk=article.pk %}" class="btn btn-default btn-lg btn-get-in-touch">Read Article</a>
+
+                  {% endif %}
 
             </div>
         </div></li>
